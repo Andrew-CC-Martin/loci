@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+#add user authentication
+gem 'devise'
 #add rspec testing
 gem 'guard-rspec'
 gem 'rspec'
