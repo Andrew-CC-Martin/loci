@@ -1,5 +1,9 @@
 class User < ApplicationRecord
-    validates_presence_of :email, :first_name, :last_name, :password
-    validates_uniqueness_of :email
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, :validatable, :omniauthable
+
+  # validates_presence_of :first_name, :last_name
 
 end
