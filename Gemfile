@@ -5,6 +5,11 @@ ruby '2.5.1'
 
 #image uploading
 gem 'carrierwave'
+#image resizing
+gem 'mini_magick'
+
+#aws cloud services support
+gem 'fog-aws'
 
 #add user authentication
 gem 'devise'
