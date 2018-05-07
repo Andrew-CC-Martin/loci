@@ -3,6 +3,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+# bootstrap styling
+gem 'bootstrap'
+
+# javascript support for bootstrap
+gem 'jquery-rails'
+
 #image uploading
 gem 'carrierwave'
 #image resizing
