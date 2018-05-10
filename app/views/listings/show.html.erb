@@ -20,26 +20,36 @@
   <%= @listing.address %>
 </p>
 
-<%= form_tag charges_path do %>
+
+
+<% @amount = @listing.price * 100 %>
+  <%= form_tag charges_path do %>
+  
   <article>
     <% if flash[:error].present? %>
       <div id="error_explanation">
         <p><%= flash[:error] %></p>
       </div>
     <% end %>
-    <label class="amount">
-      <span>Price: $
-          <%= sprintf "%.2f", (@listing.price) %>
-      </span>
+    <label class="price">
+   
     </label>
   </article>
+  <%= hidden_field_tag "listing_id", "#{@listing.id}" %>
+   <%= javascript_include_tag 'https://checkout.stripe.com/checkout.js',
+   class: 'stripe-button',
+   data: {
+     key: ENV["PUBLISHABLE_KEY"],
+     amount: @amount,
+     name: "Loci",
+     description: @listing.title,
+     image: "https://stripe.com/img/documentation/checkout/marketplace.png",
+     locale: "auto",
+     currency: "aud"
+   }%>
+   <% end %>
 
-  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="A month's subscription"
-          data-amount="500"
-          data-locale="auto"></script>
-<% end %>
+
 
 <%= link_to 'Edit', edit_listing_path(@listing) %> |
 <%= link_to 'Back', listings_path %>
