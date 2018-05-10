@@ -29,6 +29,7 @@ class ListingsController < ApplicationController
 
     respond_to do |format|
       if @listing.save
+        UserMailer.sample_email(@listing).deliver
         format.html { redirect_to @listing, notice: 'Listing was successfully created.' }
         format.json { render :show, status: :created, location: @listing }
       else
