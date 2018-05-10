@@ -4,7 +4,7 @@
   <h2 class="pl-4 pt-2"><i>
     Find your ideal venue...
   </h2></i>
-  <div class="row d-flex align-items-center justify-content-center p-2" style="min-height: 500px">
+  <div class="row d-flex"> 
   
 
     <% @listings.each do |listing| %>
@@ -37,13 +37,13 @@
 
           <div class="row">
             <div class="col-12">
-              <%= listing.description %>
+              <strong>Description: </strong><%= listing.description %>
             </div>
           </div>
 
           <div class="row">
             <div class="col-12">
-              <%= listing.address %>
+              <strong>Address: </strong><%= listing.address %>
             </div>
           </div>
 
