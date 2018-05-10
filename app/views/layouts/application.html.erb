@@ -27,19 +27,16 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav" >
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#home">login</a>
+            <%= link_to 'Create Listing |', new_listing_path %>&nbsp;
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">create listing</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#my-timeline">view profile</a>
+            <%= link_to 'View Profile |', user_path(current_user) %>&nbsp;
           </li>
           <li class="nav-item">
             <% if user_signed_in? %>
-              <%= link_to('log out', destroy_user_session_path, method: :delete) %>
+              <%= link_to(' log out', destroy_user_session_path, method: :delete) %>
             <% else %>
-              <%= link_to('log in/sign up', new_user_session_path) %>
+              <%= link_to(' log in/sign up', new_user_session_path) %>
             <% end %>
           </li>
         </ul>
