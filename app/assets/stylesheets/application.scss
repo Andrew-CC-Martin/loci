@@ -13,7 +13,25 @@
  *= require_tree .
  *= require_self
  */
+//  ### Style Guide
 
+//  Colour palette:
+ 
+//  - Light shades - "hint of red" #FAF8F7
+ 
+//  - Light accents - "contessa" #C9827A
+ 
+//  - Main brand colour - "cadet blue" #A7A8BE
+ 
+//  - Dark Accent - "cadillac" #BB5866;
+ 
+//  - Dark Shades - "martinique" #33354F
+ 
+//  Fonts:
+ 
+//  - headings - "Gothic A1"
+ 
+//  - paragraph - "Roboto"
 @import "bootstrap";
 
 body {
@@ -23,3 +41,25 @@ body {
 div {
     padding-left: 50px;
 }
+
+// changing colour of search button
+.btn-custom {
+    background-color: hsl(354, 39%, 49%) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ad4c55", endColorstr="#ad4c55");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#ad4c55), to(#ad4c55));
+    background-image: -moz-linear-gradient(top, #ad4c55, #ad4c55);
+    background-image: -ms-linear-gradient(top, #ad4c55, #ad4c55);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ad4c55), color-stop(100%, #ad4c55));
+    background-image: -webkit-linear-gradient(top, #ad4c55, #ad4c55);
+    background-image: -o-linear-gradient(top, #ad4c55, #ad4c55);
+    background-image: linear-gradient(#ad4c55, #ad4c55);
+    border-color: #ad4c55 #ad4c55 hsl(354, 39%, 49%);
+    color: #fff !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.00);
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  a.link_to_text_color {
+    //   color: #ffffff;
+  }
