@@ -19,4 +19,9 @@ class UserMailer < ApplicationMailer
     @user = user
     mail(to: @user.email, subject: 'Sample Email')
   end
+
+  def new_listing_notification(user_id)
+    @user = User.find(user_id)
+    mail(to: @user.email, subject: 'Loci listing sucessfully created')
+  end
 end
