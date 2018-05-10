@@ -1,16 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listings</h1>
+<div class="container-fluid">
+  <div class="row d-flex align-items-center justify-content-center p-5" style="min-height: 500px">
 
     <% @listings.each do |listing| %>
 
       <%= link_to listing do %>
 
-      <div class="row d-flex align-items-center p-5">
-        <div class="col-6">
+
+        <div class="col-12 col-sm-6 col-lg-4">
 
           <div class="row">
-            <div class="col">
+            <div class="col-12">
               <%= image_tag listing.image.thumb.url %>
             </div>
           </div>
@@ -36,16 +37,12 @@
               <%= listing.address %>
             </div>
           </div>
-        
-        </div>
-      </div>
+
+        </div>    
       <% end %>
 
    <% end %>
 
-  <%# </tbody>
-</table> %>
-
-<br>
-
-<%= link_to 'New Listing', new_listing_path %>
+    
+  </div>
+</div>
