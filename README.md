@@ -1,5 +1,7 @@
 # Loci - the venue finding solution
 
+https://github.com/stemshell/loci
+
 ## Problem definition
 
 Currently in the Australian market, there is no centralised way to sell and find venues for hire. For eg, for someone who wants to find a pub to hire a room for a function, there isn't really a better option than to simply call individual pubs, go to them in person, or use their (usually poor) websites.
@@ -64,7 +66,15 @@ Fonts:
 
 - paragraph - "Roboto"
 
-<!-- <link href="https://fonts.googleapis.com/css?family=Gothic+A1|Roboto" rel="stylesheet"> -->
+## Trello Board
 
-<!-- font-family: 'Gothic A1', sans-serif;
-font-family: 'Roboto', sans-serif; -->
+!(https://s3.amazonaws.com/loci-app/assets/images/Screen+Shot+2018-05-09+at+20.21.14.png)
+
+## Wireframes
+
+!(https://s3.amazonaws.com/loci-app/assets/images/Screen+Shot+2018-05-11+at+09.47.38.png)
+
+- [Wireframes can be seen here](https://www.figma.com/file/Vqp8oeQB9j9bhVs74lcDNput/marketplace)
+
+## User Flow
+
