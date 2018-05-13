@@ -72,9 +72,14 @@ Fonts:
 
 ## Wireframes
 
-!(https://s3.amazonaws.com/loci-app/assets/images/Screen+Shot+2018-05-11+at+09.47.38.png)
+![alt-text](https://s3.amazonaws.com/loci-app/assets/images/Screen+Shot+2018-05-11+at+09.47.38.png "Wireframes")
 
 - [Wireframes can be seen here](https://www.figma.com/file/Vqp8oeQB9j9bhVs74lcDNput/marketplace)
 
 ## User Flow
 
+- ![alt-text](https://s3.amazonaws.com/loci-app/assets/images/Screen+Shot+2018-05-11+at+09.56.13.png "User flow diagram")
+
+## Database schema
+
+- ![alt-text](https://s3.amazonaws.com/loci-app/assets/images/loci_db_schema.png "Database schema")
