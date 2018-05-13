@@ -68,7 +68,7 @@ Fonts:
 
 ## Trello Board
 
-!(https://s3.amazonaws.com/loci-app/assets/images/Screen+Shot+2018-05-09+at+20.21.14.png)
+![alt-text](https://s3.amazonaws.com/loci-app/assets/images/Screen+Shot+2018-05-09+at+20.21.14.png "Trello Board")
 
 ## Wireframes
 
